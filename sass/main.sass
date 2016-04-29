@@ -1,25 +1,33 @@
-title
-  font-family: sans-serif
-  color: rgb(255, 230, 255)
+@import "scss/font-awesome.scss"
 
+h1
+  font-family: Helvetica Neue
+  color: rgb(245, 214, 214)
+  margin: .9rem
+  font-size: 7rem
+  font-weight: lighter
 body
   text-align: center
   background-color: rgb(232,232,232)
   display: block
   font-family: sans-serif
+  width: 100%
 
-.where__totype
+input
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 25px 50px 0 rgba(0, 0, 0, 0.1)
+  margin: 130px 0 40px 0
 
-  display: inline-block
-
-
-section
+.todo__list
   background-color: white
   display: inline-block
-  padding: 1rem 1rem 1rem
+  padding: 0 0 0
+  width: 70%
+
+.list__selects
+  padding: 0
+  margin: 0
 
 li
-
   list-style: none
   text-align: left
   border-style: solid
@@ -30,11 +38,13 @@ li
   background-color: transparent
   border-radius: .2rem
   color: rgb(204, 204, 204)
-  border-color: transparent 
+  border-color: transparent
+  padding: 2rem 2rem 0rem
+  border: 0
 
 div
   display: inline-block
-  padding: 1rem
+  padding: 0 0 0
   color: rgb(204, 204, 204)
 
 footer
