@@ -2168,7 +2168,7 @@ h1 {
   font-family: Helvetica Neue;
   color: #f5d6d6;
   margin: 0.9rem;
-  font-size: 7rem;
+  font-size: 70px;
   font-weight: lighter; }
 
 body {
@@ -2180,7 +2180,9 @@ body {
 
 input {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-  margin: 130px 0 40px 0; }
+  margin: 130px 0 40px 0;
+  padding: 16px 16px 16px 60px;
+  width: 230px; }
 
 .todo__list {
   background-color: white;
@@ -2201,10 +2203,10 @@ li {
 
 .bottom__button {
   background-color: transparent;
-  border-radius: 0.2rem;
+  border-radius: 0.2px;
   color: #cccccc;
   border-color: transparent;
-  padding: 2rem 2rem 0rem;
+  padding: 20px 20px 0;
   border: 0; }
 
 div {

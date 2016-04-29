@@ -7,18 +7,17 @@
   </head>
   <body>
     <h1>todos</h1>
-    <script type="text/javascript" > </script>
-      <form class="todo__list" action="index.html" method="post">
+      <form class="todo__list" action="index.html" method="post" data-js="form">
         <i class="fa fa-angle-down"></i>
         <input class="where__totype" type="text" name="to__do" placeholder="Type To Do List Here" data-js="type__here">
-          <ul class="list__selects">
+           <!-- <ul class="list__selects">
             <li class="list__item">
               <label><input type="checkbox" name="checkbox" value="value" data-js="click__me">Learn how to code</label>
             </li>
             <li class="list__item">
               <label><input type="checkbox" name="checkbox" value="value" data-js="click__me">Keep going</label>
             </li>
-          </ul>
+          </ul> -->
         <div class"item__left">1 item left</div>
       <div>
         <button class="bottom__button" type="button" data-js="show__all">All</button>
@@ -28,5 +27,7 @@
       </div>
       </form>
   </body>
+  <script type="text/javascript" src="JS/jquery-1.12.3.js"></script>
+  <script type="text/javascript" src="JS/main.js"> </script>
   <footer>Double-click to edit a todo</footer>
 </html>
