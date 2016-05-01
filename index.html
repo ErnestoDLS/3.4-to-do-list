@@ -6,20 +6,23 @@
     <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <h1>todos</h1>
-      <form class="todo__list" action="index.html" method="post" data-js="form">
-        <i class="fa fa-angle-down"></i>
-        <input class="where__totype" type="text" name="to__do" placeholder="Type To Do List Here" data-js="type__here">
-           <!-- <ul class="list__selects">
-            <li class="list__item">
-              <label><input type="checkbox" name="checkbox" value="value" data-js="click__me">Learn how to code</label>
-            </li>
-            <li class="list__item">
-              <label><input type="checkbox" name="checkbox" value="value" data-js="click__me">Keep going</label>
-            </li>
-          </ul> -->
-        <div class"item__left">1 item left</div>
-      <div>
+      <section class="todoapp">
+          <header class="header">
+              <h1>todos</h1>
+              <input class="new-todo" placeholder="What needs to be done?" autofocus>
+          </header>
+          <section class="main">
+              <input class="toggle-all" type="checkbox">
+              <label for="toggle-all">Mark all as complete</label>
+              <ul class="todo-list"></ul>
+          </section>
+          <footer class="footer">
+              <span class="todo-count"><strong>0</strong> item left</span>
+              <button class="clear-completed">Clear completed</button>
+          </footer>
+      </section>
+      <footer class="info">
+          <p>Double-click to edit a todo</p>      <div>
         <button class="bottom__button" type="button" data-js="show__all">All</button>
         <button class="bottom__button" type="button" data-js="show__active">Active</button>
         <button class="bottom__button" type="button" data-js="show__active">Completed</button>
