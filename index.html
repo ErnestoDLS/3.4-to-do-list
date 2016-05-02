@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <form class="form" data-js="form">
       <section class="todoapp">
           <header class="header">
               <h1>todos</h1>
-              <input class="new-todo" placeholder="What needs to be done?" autofocus>
+              <input class="new-todo" placeholder="What needs to be done?" autofocus data-js="type__here">
           </header>
           <section class="main">
-              <input class="toggle-all" type="checkbox">
+              <input class="toggle-all" type="checkbox" data-js="input-here">
               <label for="toggle-all">Mark all as complete</label>
-              <ul class="todo-list"></ul>
+              <ul class="todo-list" data-js="click__me"></ul>
           </section>
           <footer class="footer">
-              <span class="todo-count"><strong>0</strong> item left</span>
               <button class="clear-completed">Clear completed</button>
           </footer>
       </section>
       <footer class="info">
-          <p>Double-click to edit a todo</p>      <div>
+        <p>Double-click to edit a todo</p>
+      <div>
         <button class="bottom__button" type="button" data-js="show__all">All</button>
         <button class="bottom__button" type="button" data-js="show__active">Active</button>
         <button class="bottom__button" type="button" data-js="show__active">Completed</button>
