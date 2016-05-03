@@ -11,11 +11,6 @@ this.todoLog = function(list){
 },{"jquery":4}],2:[function(require,module,exports){
 var $ = require("jquery");
 
-$(function(){
-
-
-})
-
 },{"jquery":4}],3:[function(require,module,exports){
 var $ = require("jquery");
 var todoList = require("todolist");

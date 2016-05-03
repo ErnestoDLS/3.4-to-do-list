@@ -1,6 +1,1 @@
 var $ = require("jquery");
-
-$(function(){
-
-
-})
