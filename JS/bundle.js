@@ -1,31 +1,52 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-
-},{}],2:[function(require,module,exports){
-arguments[4][1][0].apply(exports,arguments)
-},{"dup":1}],3:[function(require,module,exports){
 var $ = require("jquery");
-var input = require("input");
-var button = require("button");
+var $todo__list = $("[data-js='todo-list']");
+
+this.todoLog = function(list){
+  $todo__list.prepend(`
+    <li data-js="todo-item"> ${list} </li>
+  `)
+}
+
+},{"jquery":4}],2:[function(require,module,exports){
+var $ = require("jquery");
+
+$(function(){
+
+
+})
+
+},{"jquery":4}],3:[function(require,module,exports){
+var $ = require("jquery");
+var todoList = require("todolist");
+var todoitem = require("todoitem");
 
 $(function(){
   var $todoInput = $("[data-js='type__here']");
   var $form = $("[data-js='form']");
   var newListitem = $("[data-js='input-here']").val();
+  var $todo__list = $("[data-js='todo-list']");
+  var $todoItem = $("[data-js='todo-item']");
+
+
+
 
 
   $form.on("submit", function(e){
     e.preventDefault();
   })
   $todoInput.on("keyup", function(e){
+    var $theText = $(e.target)
+    // $todo__list = [];
+    var $todoItem = $("[data-js='todo-item']");
     console.log(e);
     if($todoInput.val().length > 1 && e.keyCode === 13){
-      $("[data-js='todo-list']").append("<li>" + $todoInput.val() + "</li>");
-      $todoInput.val('');
+      todoitem.todoLog($theText.val())
     }
   });
 })
 
-},{"button":1,"input":2,"jquery":4}],4:[function(require,module,exports){
+},{"jquery":4,"todoitem":1,"todolist":2}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.3
  * http://jquery.com/

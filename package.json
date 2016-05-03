@@ -12,8 +12,8 @@
     "jquery": "^2.2.3"
   },
   "browser": {
-    "input": "./JS/input-here.js",
-    "button": "./JS/button.js"
+    "todolist": "./JS/todolist.js",
+    "todoitem": "./JS/todoitem.js"
   }
 
 }
