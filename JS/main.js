@@ -6,7 +6,7 @@ jQuery(function ($) {
   });
 
   var ENTER_KEY = 13;
-  var ESCAPE_KEY = 27;
+  var DELETE_KEY = 8;
 
   var util = {
     uuid: function () {
@@ -161,7 +161,7 @@ jQuery(function ($) {
         e.target.blur();
       }
 
-      if (e.which === ESCAPE_KEY) {
+      if (e.which === DELETE_KEY) {
         $(e.target).data('abort', true).blur();
       }
     },
